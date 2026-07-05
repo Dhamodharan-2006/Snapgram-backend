@@ -6,7 +6,7 @@ const onlineUsers = new Map();
 const initSocket = (server) => {
   const io = new Server(server, {
     cors: {
-      origin: process.env.CLIENT_URL || 'http://localhost:3000',
+      origin: process.env.CLIENT_URL || 'https://snapgram-frontend-yfp0.onrender.com',
       methods: ['GET', 'POST'],
       credentials: true,
     },

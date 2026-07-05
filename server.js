@@ -28,7 +28,7 @@ app.use(compression());
 if (process.env.NODE_ENV === 'development') app.use(morgan('dev'));
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://snapgram-frontend-yfp0.onrender.com',
   credentials: true,
 }));
 
